@@ -1,0 +1,12 @@
+.notes{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: purple;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.notes:hover{
+    color: skyblue;
+    background-color: purple;
+}
+

@@ -7,15 +7,26 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("//console.log(\"hello world\")\r\nconsole.log(\"welcome\");\r\n\r\n__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"))\r\n\r\n\r\nconst h1 =  document.createElement(\"h1\");\r\nh1.innerText = \"Welcome to Notes\";\r\nh1.classList.add(\"notes\")\r\n\r\ndocument.getElementById(\"root\").appendChild(h1);\n\n//# sourceURL=webpack://webpackassignment/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _notes_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./notes.jpg */ \"./src/notes.jpg\");\n//console.log(\"hello world\")\r\nconsole.log(\"welcome\");\r\n\r\n__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"))\r\n;\r\n\r\n\r\nconst h1 =  document.createElement(\"h1\");\r\nh1.innerText = \"Welcome to Notes\";\r\nh1.classList.add(\"notes\");\r\n\r\nconst myIcon = new Image();\r\n  myIcon.src = _notes_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n\r\n document.body.appendChild(myIcon);\r\n\r\n\r\n\r\ndocument.getElementById(\"root\").appendChild(h1);\n\n//# sourceURL=webpack://webpackassignment/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/notes.jpg":
+/*!***********************!*\
+  !*** ./src/notes.jpg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"37eda3c99c710ed6590e.jpg\";\n\n//# sourceURL=webpack://webpackassignment/./src/notes.jpg?");
 
 /***/ })
 

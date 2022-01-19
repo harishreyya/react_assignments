@@ -1,0 +1,25 @@
+{
+  "forms": [
+    {
+      "name": "REYYA HARISH",
+      "address": "kasibugga",
+      "age": "34",
+      "department": "sales",
+      "salary": "352",
+      "ismarried": false,
+      "notMarried": true,
+      "id": 1
+    },
+    {
+      "name": "Rashmi",
+      "address": "kasibugga",
+      "age": "34",
+      "department": "sales",
+      "salary": "35266",
+      "ismarried": true,
+      "notMarried": false,
+      "photo": "blob:http://localhost:3000/ee03ca77-a5eb-45af-ad72-cee9ceb33156",
+      "id": 2
+    }
+  ]
+}

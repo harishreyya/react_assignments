@@ -17,14 +17,25 @@ function App() {
   const double = () => {
     setCount(count * 2)
   }
+
+  if (count > 25){
+    return <div>
+      
+      <h1> The has reached maximum limit which is more than 25 </h1>
+
+    </div>
+  }
   
   return (
     <div className="App">
-     <h1>Counter: {count}</h1>
-     <button  className="increment" onClick={ () => Increment(1)} >AddOne</button>
-     <br></br>
+     <h1>The count is {count}</h1>
+     <button  className="increment" onClick={() => Increment(1)} >AddOne</button>
+     <br/>
+     <br/>
+
      <button className="reduce" onClick={handleCounter}>ReduceOne</button>
-     <br></br>
+     <br/>
+     <br/>
      <button className="double" onClick={double}>Double</button>
     
     </div>

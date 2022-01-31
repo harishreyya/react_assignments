@@ -46,6 +46,7 @@
   font-weight: bolder;
   height: 50px;
   width: 100px;
+  border: none;
 
 }
 
@@ -55,10 +56,11 @@
   font-weight: bolder;
   height: 50px;
   width: 100px;
+  border: none;
 }
 
 .double{
-
+  border: none;
   color: blue;
   background: yellowgreen;
   font-weight: bolder;
@@ -69,6 +71,7 @@
 .increment:hover{
 
   color: purple;
+  
 
 }
 

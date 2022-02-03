@@ -1,16 +1,23 @@
-import React from "react"
+import {useState} from 'react'
 
-function GroceryInput({ onClick }) {
-    const[title, setTitle] = React.useState("")
+export const GroceryInput = ({GetItem}) =>  {
 
+    const [item,setItems] = useState("")
+    const handlechange = (e) => {
+        setItems(e.target.value)
+    }
+
+    const handleclick = () => {
+    GetItem(item)
+    }
+
+    
     return (
-        <div>
-        <input placeholder="Add Something" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <button onClick={() => onClick(title)}>ADD</button>
-        
-
-    </div>
+       <>
+       <input type="text"  placeholder="Enter Your Grocery List" onChange={handlechange}/>
+       <button onClick={handleclick}>Add items</button>
+       
+       
+       </>
     )
 }
-
-export { GroceryInput }

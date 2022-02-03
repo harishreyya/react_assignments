@@ -2,43 +2,32 @@ import React from "react"
 import { GroceryInput } from "./GroceryInput"
 import { GroceryList } from "./GroceryList"
 import { v4 as uuid } from "uuid"
+import {useState} from "react"
 
-function Grocery() {
-    const[data, setData,Delete] = React.useState([]);
-    const[showAll, setShowAll] = React.useState(true)
-    const handleAdd = (title) => {
-    const payload = {
-        title,
-        status: false,
-        id: uuid()
-    };
-    setData([ ...data, payload])
-    Delete([ ...data, payload])
- };
- const handleDelete = id => {
-    const updatedGrocery = data.map((item) =>
-    item.id === id ? { ...item, status : !item.status} : item );
-  Delete(updatedGrocery);
- }
- const handleToggle = id => {
-    const updatedGrocery = data.map((item) =>
-    item.id === id ? { ...item, status : !item.status} : item );
-    setData(updatedGrocery);
-}
+
+
+export  const Grocery = (item) => {
+    const [value,setValue] = useState([])
+    const GetItem = (item)=>{
+
+      const groceryItems = {
+      name:item,
+      state:false,
+      id:uuid()
+      }
+      setValue([...value,groceryItems])
+      }
+
+
+      const DeleteItem = (id) =>{
+      const UpdateItem = value.filter((item) => item.id !== id)
+       setValue(UpdateItem)
+      }
+      
     return (
-        <div>
-        < GroceryInput onClick={handleAdd} />
-        {data.filter((item) => (showAll ? true : !item.status)).map((item) => (
-            < GroceryList handleToggle={handleToggle} handleDelete={handleDelete} key={item.id} { ...item } />
-        ))}
-        
- <button onClick={() => setShowAll(!showAll)}>
-     { showAll ? "SHOW UNBUYED GROCERIES" : "SHOW ALL GROCERIES"}
- </button>
-
- 
-    </div>
+        <>
+        <GroceryInput GetItem={GetItem} />
+        {value.map((e)=> <GroceryList key={e.id} {...e} DeleteItem={DeleteItem} />)}
+        </>
     )
 }
-
-export { Grocery }

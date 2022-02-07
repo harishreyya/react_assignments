@@ -85,17 +85,12 @@ const handleClick = (data) =>{
      <input type="submit" value="submit" />
      
             </form>
-            <table id="table"
->
-                    <thead>
-                        <tr>
+            <br />
+                        
                 <ShowGame
                 form={form}
                 handleClick = {handleClick} />
                 
-                </tr>
-                </thead>
-                </table>
             
         </div>
     )

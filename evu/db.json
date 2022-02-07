@@ -9,6 +9,27 @@
       "gamedesc": "Titanfall is a series of video games that mainly feature first-person shooter games",
       "gamerating": "5",
       "id": 1
+    },
+    {
+      "gamename": "Mario",
+      "gameauthor": "Nintendo",
+      "gametags": "adventure, multiplayer",
+      "gameprice": "599",
+      "forkids": "forkids",
+      "gamedesc": "Super Mario is a platform game series created by Nintendo based on and starring the fictional plumber Mario.",
+      "gamerating": "3",
+      "id": 2
+    },
+    {
+      "gamename": "cod",
+      "gameauthor": "harish",
+      "gametags": "lecl",
+      "gameprice": "2339",
+      "forkids": "forkids",
+      "gamedesc": "hskshsk",
+      "gamerating": "3",
+      "id": 3
     }
+  
   ]
 }

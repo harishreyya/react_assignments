@@ -1,5 +1,10 @@
+import {Form} from "./components/Form"
+
 function App() {
-  return <div>"Start code here"</div>;
+  return <div>
+    <h1>hello world</h1>
+    <Form/>
+  </div>;
 }
 
 export default App;

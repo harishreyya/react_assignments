@@ -1,13 +1,15 @@
 import './App.css';
-import { Flex } from './components/Flex';
-import {Button} from "./components/Button"
-import { useState } from 'react';
+// import { Flex } from './components/Flex';
+// import {Button} from "./components/Button"
+// import { useState } from 'react';
+import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material';
 function App() {
-  const [theme,setTheme] = useState("light")
+  // const [theme,setTheme] = useState("light")
   return (
     <div className="App">
       
-      <Button theme = {theme}>click me</Button>
+      {/* <Button theme = {theme}>click me</Button>
       <button onClick={()=>{
         setTheme(theme ==="light"? "dark" : "light")
       }}>change theme</button>
@@ -15,7 +17,14 @@ function App() {
         <div>one</div>
         <div>two </div>
         <div>three</div>
-      </Flex>
+      </Flex> */}
+
+      <Button variant="contained">Contained</Button>
+<Button variant="outlined">Outlined</Button>
+<svg data-testid="DeleteIcon"></svg>
+
+<h1>checking ui</h1>
+<HomeIcon />
     </div>
   );
 }

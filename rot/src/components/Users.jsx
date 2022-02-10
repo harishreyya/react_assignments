@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 export const Users = ()=>{
 const [users,setUsers] = useState([])
 useEffect(()=>{
-fetch("http://reqes.in/api/users")
-.then((a)=> a.json())
+fetch("http://reqres.in/api/users")
+.then((x)=> x.json())
 .then(({data})=> setUsers(data));
 },[]);
 

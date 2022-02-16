@@ -1,8 +1,16 @@
 import { useState } from "react";
-import {useDispatch, useSelector } from "react-redux"
+import {shallowEqual, useDispatch, useSelector } from "react-redux"
 import { addTodo } from '../redux/action';
 export const Todos =()=>{
     const todos = useSelector((store)=> store.todos)
+    //shallowEqual
+    // function equalityFn(prev,curr){
+    //     if(prev.loading==curr.loading){
+    //         return true;
+    //     }else{
+    //        return false;
+    //     }
+    // })
     const dispatch = useDispatch();
     const [text,setText] = useState();
 return <div>

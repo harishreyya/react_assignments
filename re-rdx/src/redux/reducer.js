@@ -1,3 +1,4 @@
+import { shallowEqual } from "react-redux";
 import { ADD_TODO, DEC_COUNT,INC_COUNT } from "./actionTypes";
 
 const init = {
@@ -6,6 +7,7 @@ const init = {
 }
 
 export const counterReducer = (store = init,{type,payload})=>{
+   
     switch (type) {
         case INC_COUNT:
          

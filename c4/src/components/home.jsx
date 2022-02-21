@@ -1,6 +1,28 @@
+import { useEffect, useState } from "react"
+import axios from "axios"
 export const Home = ()=>{
+const [view,setView] = useState([])
+const [viewmatch,setViewmatch]= useState([]);
+
+useEffect(()=>{
+    const load = async ()=>{
+        const response = await axios.get("https://fast-reef-22226.herokuapp.com/data");
+        setView(response.data)
+    };
+
+    load()
+},[])
+
+const searchview = (text)=>{
+let matches = view.filter((viewed)=>{
+    const regex = new RegExp(`${text}`,"gi");
+    return viewed.title.match(regex) 
+})
+setViewmatch(matches)
+}
+
     return <div>
-<img className="logo"   src="https://cdn.vox-cdn.com/thumbor/ULiGDiA4_u4SaK-xexvmJVYUNY0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/3218223/google.jpg"/>
+<img className="logo"   src="https://cdn.vox-cdn.com/thumbor/ULiGDiA4_u4SaK-xexvmJVYUNY0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/3218223/google.jpg" alt="prop"/>
 <br />
 <input className="search-box" placeholder="search" type="text"/>
 <button className="search">Search</button>

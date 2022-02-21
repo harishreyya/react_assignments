@@ -4,5 +4,15 @@ export const Home = ()=>{
 <br />
 <input className="search-box" placeholder="search" type="text"/>
 <button className="search">Search</button>
+<br />
+<button id="sort-alphabetically">ASC</button>
+<button id="sort-alphabetically-desc">DESC</button>
+<button id="sort-by-date">date ASC</button>
+<button id="sort-by-date-desc">date DESC</button>
+<button id="sort-by-quality">quality ASC</button>
+<button id="sort-by-quality-desc">quality DESC</button>
+<button id="filter-explicit">filter</button>
+
+
     </div>
 }

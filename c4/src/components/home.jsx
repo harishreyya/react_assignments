@@ -12,10 +12,11 @@ useEffect(()=>{
 
     load()
 },[])
+console.log(view)
 
 const searchview = (text)=>{
 let matches = view.filter((viewed)=>{
-    const regex = new RegExp(`${text}`,"gi");
+    const regex = new RegExp(`${text}`);
     return viewed.title.match(regex) 
 })
 setViewmatch(matches)
@@ -24,7 +25,7 @@ setViewmatch(matches)
     return <div>
 <img className="logo"   src="https://cdn.vox-cdn.com/thumbor/ULiGDiA4_u4SaK-xexvmJVYUNY0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/3218223/google.jpg" alt="prop"/>
 <br />
-<input className="search-box" placeholder="search" type="text"/>
+<input className="search-box" placeholder="search" type="text" onChange={(e)=>searchview(e.target.value)}/>
 <button className="search">Search</button>
 <br />
 <button id="sort-alphabetically">ASC</button>
@@ -34,7 +35,18 @@ setViewmatch(matches)
 <button id="sort-by-quality">quality ASC</button>
 <button id="sort-by-quality-desc">quality DESC</button>
 <button id="filter-explicit">filter</button>
-
+{viewmatch && viewmatch.map((item,index)=>{
+    
+        <div title={`${item.title}`}>
+        <p><strong>url:</strong>{item.url}</p>
+    <p><strong>description:</strong>{item.description}</p>
+    <p><strong>author:</strong>{item.author}</p>
+    <p><strong>creation_date:</strong>{item.creation_date}</p>
+    <p><strong>explicit:</strong>{item.explicit}</p>
+    <p><strong>quality:</strong>{item.quality}</p>
+        
+    </div>
+})}
 
     </div>
 }

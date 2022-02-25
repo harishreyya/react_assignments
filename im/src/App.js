@@ -16,9 +16,12 @@ if(show===false){
     <div className="App">
    <div>
      <h1>harish</h1>
-     <h1>adress</h1>
+     <h1>address</h1>
+     <div>card</div>
    </div>
    <button onClick={()=>setShow(false)} >hide</button>
+
+  
     </div>
   );
 }

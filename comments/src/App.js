@@ -9,7 +9,9 @@ function App() {
       .then((res) => res.json())
 
  useEffect(() => {
+  console.log(data)
     getData().then((data) => setData(data))
+  
   }, [])
 
 
@@ -21,7 +23,7 @@ function App() {
      <h1>all data shown here</h1>
       <div>
   {data?.map((item) => 
-    <div className="show">
+    <div className="show" >
     <h5><strong>title:</strong>{item.WebName}</h5>
     <p><strong>url:</strong>{item.url}</p>
     <p><strong>description:</strong>{item.description}</p>

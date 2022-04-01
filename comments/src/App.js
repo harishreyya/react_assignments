@@ -25,18 +25,17 @@ function App() {
   {data?.map((item) => 
     <div className="show" >
     <h5><strong>title:</strong>{item.WebName}</h5>
-    <p><strong>url:</strong>{item.url}</p>
-    <p><strong>description:</strong>{item.description}</p>
-    <p><strong>author:</strong>{item.author}</p>
-    <p><strong>creation_date:</strong>{item.creation_date}</p>
-    <p><strong>explicit:</strong>{item.explicit}</p>
-    <p><strong>quality:</strong>{item.quality}</p>
-  <hr/>
+    <hr/>
     </div>
    
   )}
   
    </div>
+
+
+   <input onChange={e.target.value} placeholder="kuch bhi likho"/>
+   <input type="submit"/>
+
     </div>
   );
 }

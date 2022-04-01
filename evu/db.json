@@ -49,6 +49,16 @@
       "gamedesc": "Titanfall is a series of video games that mainly feature first-person shooter games",
       "gamerating": "5",
       "id": 5
+    },
+    {
+      "gamename": "pubg",
+      "gameauthor": "koi bhi",
+      "gametags": "game khelo",
+      "gameprice": "1234",
+      "forkids": "forkids",
+      "gamedesc": "nice game",
+      "gamerating": "4",
+      "id": 6
     }
   ]
 }

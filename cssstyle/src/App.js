@@ -21,7 +21,7 @@ function App() {
 
       <Button variant="contained">Contained</Button>
 <Button variant="outlined">Outlined</Button>
-<svg data-testid="DeleteIcon"></svg>
+
 
 <h1>checking ui</h1>
 <HomeIcon />

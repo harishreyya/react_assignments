@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+import {Cal} from "./components/calculater"
 
 function App() {
 const[state,setState]=useState(0)
@@ -14,7 +15,11 @@ return <div>reached maximum</div>
     <div className="App">
      
       <h1>{state}</h1>
-      <button onClick={()=>setState(state+1)}>button</button>
+      <button onClick={()=>setState(state+1)}>button +</button>
+      <button onClick={()=>setState(state-1)}>button -</button>
+      <button onClick={()=>setState(0)}>reset</button>
+
+      <Cal/>
     </div>
   );
 }

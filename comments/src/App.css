@@ -28,25 +28,6 @@
   color: #61dafb;
 }
 
-.flex{
-  display: flex;
-  gap: 5px;
-  border: 1px solid black;
-  width: 17%;
-  border-radius: 8px;
-  margin-left: 30%;
-  margin-top: 40%;
-}
-
-.flex > img {
- width: 5%;
- float: right;
-}
-
-.search{
-  border: none;
-  margin-left: 3%;
-}
 
 
 @keyframes App-logo-spin {

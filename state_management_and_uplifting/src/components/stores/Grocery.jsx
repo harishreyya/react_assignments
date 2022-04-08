@@ -20,8 +20,8 @@ export  const Grocery = (item) => {
 
 
       const DeleteItem = (id) =>{
-      const UpdateItem = value.filter((item) => item.id !== id)
-       setValue(UpdateItem)
+        setValue((value)=>value.filter((item) => item.id !== id))
+       
       }
       
     return (

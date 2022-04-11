@@ -38,9 +38,10 @@ export const  Show = () =>{
 
     return(
         <>
+        <div>
          < Table getdata = {formData} />
        < Form postData = {handleSubmit} />
-      
+       </div>
         </>
     )
 }

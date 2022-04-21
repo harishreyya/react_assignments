@@ -8,9 +8,12 @@ function App() {
   return (
     <div className="App">
       <input type="text" placeholder="search" onChange={(e)=>{setSearchTerm(e.target.value)}}/>
+      
+   
     {JSONDATA.filter((val)=>{
       if(searchTerm===""){
-        return val
+  
+        return val 
       }else if(val.first_name.toLowerCase().includes(searchTerm.toLowerCase())){
         return val
       }
@@ -22,9 +25,9 @@ function App() {
         <p>{val.first_name}</p>
       </div>}
     })}
-
-    <img src='https://image.shutterstock.com/image-photo/wooden-blocks-white-grey-board-260nw-1889878714.jpg'/>
-    </div>
+<img className='fixed' src='https://image.shutterstock.com/image-illustration/opened-book-made-black-words-260nw-220589989.jpg'/>
+ 
+     </div>
   );
 }
 

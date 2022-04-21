@@ -15,10 +15,15 @@ function App() {
         return val
       }
     }).map((val,key)=>{
-      return <div key={key}>
+      if(searchTerm===""){
+        return <div></div>
+      }else{
+      return <div  className='transparent' key={key}>
         <p>{val.first_name}</p>
-      </div>
+      </div>}
     })}
+
+    <img src='https://image.shutterstock.com/image-photo/wooden-blocks-white-grey-board-260nw-1889878714.jpg'/>
     </div>
   );
 }

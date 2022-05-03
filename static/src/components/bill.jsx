@@ -60,19 +60,26 @@ Tel : +91 080 22065000 / 5001,</p>
 <div className="report_result">
 <div><strong>LIVER</strong> shows mild enlargement (17.6cm) with normal hepatic parenchymal echotexture.Intrahepatic biliary radicles, canaliculi,vascular structures appear normal in echopattern. No evidence of any SOL seen.</div>
 <div><strong>GALL BLADDER</strong>is well visualized.No evidence of intraluminal Calculi seen.</div>
-<div><strong>COMMON BILE DUCT</strong></div>
-<div><strong>PORTAL VEIN</strong></div>
-<div><strong>PANCREAS</strong></div>
-<div><strong>SPLEEN</strong></div>
-<div><strong>STOMACH</strong></div>
-<div><strong>KIDNEYS</strong></div>
-<div><strong>URETERS</strong></div>
-<div><strong>URINARY BLADDER</strong></div>
-<div><strong>PROSTATE</strong></div>
+<div><strong>COMMON BILE DUCT</strong>Smooth in outline. Measures within normal limit(0.29cm). No evedience of intraductal Pathology seen. </div>
+<div><strong>PORTAL VEIN</strong>normal in echotexture and relarionship.<strong>Body</strong> measures 1.51cm approx</div>
+<div><strong>PANCREAS</strong>shows normal parenchymal echotexture(8.88cm).No Cystic or solid mass lesion noted.</div>
+<div><strong>SPLEEN</strong>measures within normal limit</div>
+<div><strong>STOMACH</strong>shows <i>Thickened antral folds with Rugeal coarsening.</i></div>
+<div><strong>KIDNEYS</strong>normal in size,shape, position and echopattern.<strong>Right Kidney</strong> measures 9.55cm x 4.96cm appx.<strong>Left Kidney</strong>measures 9.57cm x 5.17cm appx. Cortico-medullary differentiation is well maintained,<i>showing a Tiny Crystal at its upper pole.</i>No evidence of any SOL seen. Perinephric areas are normal.</div>
+<div><strong>URETERS</strong>show normal echoanatomy.No intraluminal Calculi noted.</div>
+<div><strong>URINARY BLADDER</strong>shows normal echopattern with intact capsule.<strong>Prostatic Volume</strong> measures 10.8ml approx.</div>
+<div><strong>PROSTATE</strong> is well visualized,<i>soft low-levl echoes (debris) seen in its dependent part.</i>No evidence of any Calculi or SOL seen</div>
 
+<div><i><b><u>Impression :</u></b></i></div>
+<div>
+<ul className="dots">
+    <li><b>Mild Hepatomegaly.</b></li>
+    <li><b>Gastritis.</b></li>
+    <li><b>Tiny Left Renal Concretion.</b></li>
+    <li><b>Urinary Sludges.</b></li>
+</ul>
 
-
-
+</div>
 
 </div>
 

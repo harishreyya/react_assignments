@@ -62,7 +62,10 @@ font-family: sans-serif;
 margin-left: 28%;
 margin-right: 28%;
 /* border: 1px solid black; */
-background-image: url("http://www.stjohns.in/images/standarduploads/Logo_SJNAHS.png");
+/* background-image: url("http://www.stjohns.in/images/standarduploads/Logo_SJNAHS.png"); */
+
+
+/* background-color: rgb(250, 247, 243); */
 }
 
 .red_line{
@@ -135,3 +138,38 @@ height: 500px;
   text-align: left;
   line: gap 0;
 } */
+
+.bottom_Result{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.last_img{
+  margin-top: 2%;
+  width: 15%;
+  opacity: 90%;
+  margin-left: 80%;
+ 
+}
+.last_line{
+  height: 0.5px;
+  background-color: rgb(190, 189, 186);
+  width: 60%;
+  margin-left: 40%;
+
+}
+.slogan{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: grey;
+font-weight: 100;
+font-size:6px;
+margin-left: 30%;
+}
+
+.dots{
+  width: 100%;
+}
+.last_box{
+  margin-top: 10%;
+}

@@ -73,6 +73,7 @@ Tel : +91 080 22065000 / 5001,</p>
 <div><strong>URINARY BLADDER</strong> is well visualized,<i>soft low-levl echoes (debris) seen in its dependent part.</i>No evidence of any Calculi or SOL seen</div>
 <div><strong>PROSTATE</strong> shows normal echopattern with intact capsule.<strong>Prostatic Volume</strong> measures 10.8ml approx.</div>
 
+{/* --------------------result of the report-------------------------- */}
 <div><i><b><u>Impression :</u></b></i></div>
 <div className="bottom_Result">
 <ul className="dots">
@@ -81,6 +82,7 @@ Tel : +91 080 22065000 / 5001,</p>
     <li><b>Tiny Left Renal Concretion.</b></li>
     <li><b>Urinary Sludges.</b></li>
 </ul>
+{/* -----------------------------right sight last logo and slogan------------------------- */}
 <div className="last_box">
     <img className="last_img" src="https://image3.mouthshut.com/images/imagesp/925591980s.jpg" alt="" />
    

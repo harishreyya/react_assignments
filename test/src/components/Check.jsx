@@ -25,6 +25,7 @@ export const Check = () =>{
         <img src={e.image}/>
 
         <br />
+        <hr />
  </div>
        )} 
 

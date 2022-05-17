@@ -24,8 +24,7 @@ export const Check = () =>{
         {e.cost}
         <img src={e.image}/>
 
-        <br />
-        <hr />
+        
  </div>
        )} 
 

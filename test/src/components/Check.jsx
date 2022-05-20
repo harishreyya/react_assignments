@@ -10,7 +10,7 @@ export const Check = () =>{
 
       const getData = () =>{
        
-        fetch(`http://localhost:3001/shoes?_page=${page}&_limit=5`).then(d=>d.json()).then(res=>{
+        fetch(`http://localhost:3001/shoes?_page=${page}&_limit=50`).then(d=>d.json()).then(res=>{
             setTodos(res)
         
         })

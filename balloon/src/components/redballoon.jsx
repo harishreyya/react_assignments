@@ -3,44 +3,123 @@ import "./redballon.css"
 
  export const Redballon = ()=>{
 
-const [Click,setClick] = useState(false)
+const [Click,setClick] = useState(1)
+const [Click3,setClick3] = useState(3)
 
-if(Click===true){
-    return <div>
+if(Click===2){
+    return <div id="flexbox">
 <div className="box">
-<div onClick={()=>setClick(false)} className="circle">
+box
+<div onClick={()=>setClick(1)} className="redcircle">
 circle
 </div>
-box
+
+
+</div>
+<div     className="bluecircle">
+circle
+</div>
+<div     className="greencircle">
+circle
+</div>
+<div     className="yellowcircle">
+circle
+</div>
+<div     className="violetcircle">
+circle
 </div>
 
     </div>
 }
 
-if(Click===false){
+if(Click===1){
 
-return <div>
+return <div id="flexbox">
 
-<div className="box">
+<div className="box" >
 box
 </div>
-<div onClick={()=>setClick(true)}    className="redcircle">
+<div onClick={()=>setClick(2)}    className="redcircle">
 circle
 </div>
-<div onClick={()=>setClick(true)}    className="redcircle">
+<div     className="bluecircle">
 circle
 </div>
-<div onClick={()=>setClick(true)}    className="redcircle">
+<div     className="greencircle">
 circle
 </div>
-<div onClick={()=>setClick(true)}    className="redcircle">
+<div     className="yellowcircle">
 circle
 </div>
-<div onClick={()=>setClick(true)}    className="redcircle">
+<div     className="violetcircle">
 circle
 </div>
 
 </div>
  }
+
+
+ if(Click3===3 && Click===1){
+
+    return <div>
+
+
+<div className="box" >
+box
+</div>
+<div    className="redcircle">
+circle
+</div>
+<div   onClick={()=>setClick3(4)}   className="bluecircle">
+circle
+</div>
+<div     className="greencircle">
+circle
+</div>
+<div     className="yellowcircle">
+circle
+</div>
+<div     className="violetcircle">
+circle
+</div>
+
+
+
+    </div>
+ }
+
+
+if(Click3===4 && Click===1){
+
+return <div>
+<div className="box">
+box
+
+<div   onClick={()=>setClick3(3)}  className="bluecircle">
+circle
+</div>
+
+
+</div>
+<div  className="redcircle">
+circle
+</div>
+<div     className="greencircle">
+circle
+</div>
+<div     className="yellowcircle">
+circle
+</div>
+<div     className="violetcircle">
+circle
+</div>
+
+
+
+</div>
+
+}
+
+
 
 }

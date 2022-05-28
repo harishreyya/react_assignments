@@ -1,13 +1,49 @@
 .box{
-    width: 200px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
+}
+#flexbox{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .redcircle{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 1px solid black;
-  border-radius: 50px;
+  border-radius: 35px;
   background-color: red;
+}
+
+.greencircle{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+border-radius: 35px;
+background-color: rgb(0, 255, 119);
+}
+
+.bluecircle{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+border-radius: 35px;
+background-color: rgb(25, 0, 255);
+}
+
+.yellowcircle{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+border-radius: 35px;
+background-color: yellow;
+}
+
+.violetcircle{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+border-radius: 35px;
+background-color: rgb(213, 72, 245);
 }

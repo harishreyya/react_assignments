@@ -1,0 +1,13 @@
+.box{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.redcircle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  border-radius: 50px;
+  background-color: red;
+}

@@ -7,10 +7,11 @@
 }
 
 .pic{
-    margin-top: 18%;
+    /* margin-top: 10%; */
     margin-right: 60% ;
     width: 17%;
     border-radius: 20px;
+   
 
 }
 
@@ -22,8 +23,9 @@
 
 .name{
     font-family:'Dancing Script', cursive;
-    font-size: larger;
+    font-size: 25px;
     margin-right: 20%;
+    color: rgb(125, 41, 41);
 }
 
 /* .flex{
@@ -33,6 +35,11 @@
 
 .venue{
     font-family:'Dancing Script', cursive;
-    font-size: normal;
+    font-size: 17px;
     margin-right: 20%;
+}
+
+.weds{
+    width: 12%;
+    margin-right: 20% ;
 }

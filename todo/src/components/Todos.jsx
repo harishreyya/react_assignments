@@ -5,21 +5,22 @@ export const Todos =()=>{
 
     const [todos,setTodos] = useState([]);
     const [text,setText] = useState("");
-    const [loading,setLoading] = useState(false)
+   
     const [page,setPage] = useState(1)
   useEffect(()=>{
       getData()
     },[page])
 
     const getData = () =>{
-        setLoading(true)
+       
         fetch(`http://localhost:3001/todos?_page=${page}&_limit=3`).then(d=>d.json()).then(res=>{
             setTodos(res)
-            setLoading(false)
+        
         })
     }
-    return loading ? ("loading..." 
-    ): (
+
+    
+    return  (
     <div>
         <input 
         placeholder="enter todos" 
@@ -38,7 +39,9 @@ export const Todos =()=>{
             //   setTodos([...todos,{status : false ,title: text}])
         }} > Add todos </button> 
        
-        {todos.map(e => <div key={e.id}>{e.title} - {e.status ? "done"  : "not done" }</div>)} 
+        {todos.map(e => <div key={e.id}>{e.title} - {e.status ? "done"  : "not done" }
+ </div>
+       )} 
 
         <button onClick={()=>{
             setPage(page - 1)

@@ -1,12 +1,13 @@
-import React, {useState, useEffect} from "react"
+
 import './App.css';
+import {  Todo} from './components/Todo';
 
 
 function App() {
   //normal search
   return (
     <div className="App">
-    
+    <Todo/>
     </div>
   );
 }

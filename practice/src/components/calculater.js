@@ -35,7 +35,7 @@ export const Cal =()=> {
   }
 
   return (
-    <div className="App">
+    <div >
       <div className="app-title">
         <h1> Basic Form Calculator</h1>
       </div>

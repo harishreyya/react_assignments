@@ -1,25 +1,19 @@
 
 import './App.css';
-import { useState } from 'react';
+
 import {Cal} from "./components/calculater"
-
+import { Counter } from './components/counter';
+import {CountDown} from "./components/timer";
 function App() {
-const[state,setState]=useState(0)
-// const increment = ()=>{
-//   setState(state + 1)
-// }
 
-if(state==25)
-return <div>reached maximum</div>
   return (
     <div className="App">
      
-      <h1>{state}</h1>
-      <button onClick={()=>setState(state+1)}>button +</button>
-      <button onClick={()=>setState(state-1)}>button -</button>
-      <button onClick={()=>setState(0)}>reset</button>
+    {/* <Counter/>
 
-      <Cal/>
+      <Cal/> */}
+
+      <CountDown/>
     </div>
   );
 }

@@ -25,8 +25,8 @@ function App() {
         <p>{val.first_name}</p>
       </div>}
     })}
-<img className='fixed' src='https://image.shutterstock.com/image-illustration/opened-book-made-black-words-260nw-220589989.jpg'/>
- 
+{/* <img className='fixed' src='https://image.shutterstock.com/image-illustration/opened-book-made-black-words-260nw-220589989.jpg'/>
+  */}
      </div>
   );
 }

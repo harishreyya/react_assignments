@@ -1,27 +1,27 @@
 // import { useEffect, useState } from "react"
 
-// export const Fetch = ()=>{
+export const Fetch = ()=>{
 
-//   const [data,setData] = useState(null);
+  const [data,setData] = useState(null);
 
-//   const getData = () =>
-//   fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json")
-//   .then((res)=>res.json())
+  const getData = () =>
+  fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json")
+  .then((res)=>res.json())
 
-//   useEffect(()=>{
-//     getData().then((data)=>setData(data))
-//   },[])
+  useEffect(()=>{
+    getData().then((data)=>setData(data))
+  },[])
 
-//   return <div>
-//     <h1>hie</h1>
-//     {data.map((item)=>
-//     <div>
-//      <p>{item.name}</p> 
-//     <p>{item.email}</p>
-//       <hr/>
-//       </div>)}
-//   </div>
-// }
+  return <div>
+    <h1>hie</h1>
+    {data.map((item)=>
+    <div>
+     <p>{item.name}</p> 
+    <p>{item.email}</p>
+      <hr/>
+      </div>)}
+  </div>
+}
 
 {/* import './App.css';
 import React, {useState, useEffect} from "react"

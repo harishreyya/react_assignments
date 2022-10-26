@@ -8,9 +8,7 @@ const[Todo,setTodo]=useState([])
 const [page,setPage]=useState(1)
 
 useEffect(()=>{
-    
 getData()
-
 },[page])
 const getData = ()=>{
 fetch(`http://localhost:3001/Todos?_page=${page}&_limit=3`).then(d=>d.json()).then(res=>{setTodo(res)})

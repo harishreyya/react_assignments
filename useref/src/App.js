@@ -22,7 +22,7 @@ const startTimer =  setInterval(()=>{
         clearInterval(timerRef.current)
         console.log(timerRef.current)
       }}>pause</button>
-      <button onClick={()=>{}}>reset</button>
+    
     </div>
   );
 }

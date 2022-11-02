@@ -12,6 +12,9 @@ function App() {
     {/* <Counter/>
 
       <Cal/> */}
+      <div>
+        <a href='tel:+917002092915'>call harish</a>
+      </div>
 
       <CountDown/>
     </div>

@@ -14,6 +14,15 @@ function App() {
       <Cal/> */}
       <div>
         <a href='tel:+917002092915'>call harish</a>
+        <h1> Please do open in mobile device only</h1>
+    <label class="common" for="front"> to capture photo using FRONT camera :</label>
+    <input id="front" type="file" capture="user" accept="image/*" />
+    <label class="common" for="front"> to capture photo using BACK camera :</label>
+    <input type="file" capture="environment" accept="image/*" />
+    <label class="common" for="front"> to record video using FRONT camera :</label>
+    <input id="front" type="file" capture="user" accept="video/*" />
+    <label class="common" for="front"> to record video using BACK camera :</label>
+    <input type="file" capture="environment" accept="video/*" />
       </div>
 
       <CountDown/>

@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
      
-    {/* <Counter/>
+    <Counter/>
 
-      <Cal/> */}
+      {/* <Cal/> */}
       {/* <div>
         <a href='tel:+917002092915'>call harish</a>
         <h1> Please do open in mobile device only</h1>
@@ -25,7 +25,7 @@ function App() {
     <input type="file" capture="environment" accept="video/*" />
       </div> */}
 
-      <CountDown/>
+      {/* <CountDown/> */}
     </div>
   );
 }

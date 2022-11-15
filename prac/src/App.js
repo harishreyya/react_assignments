@@ -10,8 +10,8 @@ function App() {
     <div className="App">
      {/* <Todo/>
      <Form/> */}
-     {/* <Fetch/> */}
-     <PracTodo/>
+     <Fetch/>
+     {/* <PracTodo/> */}
     </div>
   );
 }
